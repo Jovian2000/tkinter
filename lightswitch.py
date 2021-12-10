@@ -89,10 +89,12 @@ def buttonPress(event):
         window.config(bg="black")  
         print("light is off")    
     else:
-        button.config(text='Switch light on',bg="white",fg=random.choice(COLORS))
-        window.config(bg=random.choice(COLORS))      
-        print("light is on")
+        randomColor = random.choice(COLORS)
+        button.config(text='Switch light on',bg="white",fg=randomColor)
+        window.config(bg=randomColor)      
+        print("light is on. Color: " + randomColor)
 button.bind('<Button>', buttonPress)
+print(len(COLORS))
 # schijf hier tussen je code
 
 window.mainloop()
