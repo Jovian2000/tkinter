@@ -103,6 +103,6 @@ def buttonPress(event):
         randomColor = random.choice(COLORS)
         button.config(text='Switch light on',bg="white",fg=randomColor)
         window.config(bg=randomColor)      
-        print("light is on. Color: " + randomColor)
+        print("light is on. \n Color: " + randomColor)
 button.bind('<Button>', buttonPress)
 ```
